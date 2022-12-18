@@ -57,6 +57,7 @@ jobs:
           cd config/gitops-helm
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "${{ secrets.GH_USERNAME }}"
+          
           # 新規ブランチ作成
           git branch feature/${{ github.run_number }}
           git checkout feature/${{ github.run_number }}
